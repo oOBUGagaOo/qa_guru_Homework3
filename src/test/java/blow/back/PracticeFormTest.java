@@ -24,11 +24,11 @@ public class PracticeFormTest {
     $("#userEmail").setValue("kokoko@koko.ru");
     $("#userNumber").setValue("900800700");
     $("#genterWrapper").$(byText("Other")).click();
-    //датапикер:
-    //$("#dateOfBirthInput").click();
-    //$(".react-datepicker__month-select").$(byText("April")).click();
-    //$(".react-datepicker__year-select").$(byText("1995")).click();
-    //$(".react-datepicker__day react-datepicker__day--027 react-datepicker__day--selected").$(byText("27")).click();
+    //датапикер
+    $("#dateOfBirthInput").click();
+    $(".react-datepicker__month-select").$(byText("April")).click();
+    $(".react-datepicker__year-select").$(byText("1995")).click();
+    //нужно добавить число, н пока нет
 
     $(".css-2b097c-container").setValue("e");
     $("#subjectsContainer").$(byText("English")).click();
