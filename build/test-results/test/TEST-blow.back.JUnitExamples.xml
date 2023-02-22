@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="blow.back.JUnitExamples" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-02-22T08:17:11" hostname="WGD02RTI1051" time="0.017">
+  <properties/>
+  <testcase name="firstTest()" classname="blow.back.JUnitExamples" time="0.014"/>
+  <testcase name="secondTest()" classname="blow.back.JUnitExamples" time="0.002"/>
+  <system-out><![CDATA[This is beforeAll
+  This is beforeEach
+    This is firstTest
+  This is afterEach
+  This is beforeEach
+    This is secondTest
+  This is afterEach
+This is afterAll
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
