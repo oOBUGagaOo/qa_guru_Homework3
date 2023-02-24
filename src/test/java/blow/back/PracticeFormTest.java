@@ -21,11 +21,11 @@ public class PracticeFormTest {
   }
 
   @Test
-  void FillFormTest() {
+  void fillFormTest() {
     $("#firstName").setValue("Dmitry");
     $("#lastName").setValue("Plotnikov");
     $("#userEmail").setValue("kokoko@koko.ru");
-    $("#userNumber").setValue("900800700");
+    $("#userNumber").setValue("9008007000");
     $("#genterWrapper").$(byText("Other")).click();
     $("#dateOfBirthInput").click();
     $(".react-datepicker__month-select").$(byText("August")).click();
