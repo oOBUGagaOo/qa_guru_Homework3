@@ -5,6 +5,8 @@ import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import java.io.File;
+
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
@@ -21,17 +23,26 @@ public class PracticeFormTest {
   void FillFormTest() {
     $("#firstName").setValue("Dmitry");
     $("#lastName").setValue("Plotnikov");
-    $("#userEmail").setValue("kokoko@koko.ru");
-    $("#userNumber").setValue("900800700");
-    $("#genterWrapper").$(byText("Other")).click();
-    //датапикер
-    $("#dateOfBirthInput").click();
-    $(".react-datepicker__month-select").$(byText("April")).click();
-    $(".react-datepicker__year-select").$(byText("1995")).click();
-    //нужно добавить число, н пока нет
 
-    $(".css-2b097c-container").setValue("e");
-    $("#subjectsContainer").$(byText("English")).click();
+    $("#userEmail").setValue("kokoko@koko.ru");
+
+    $("#userNumber").setValue("900800700");
+
+    $("#genterWrapper").$(byText("Other")).click();
+
+    $("#dateOfBirthInput").click();
+    $(".react-datepicker__month-select").$(byText("August")).click();
+    $(".react-datepicker__year-select").$(byText("1997")).click();
+    $(".react-datepicker__month-container").$(byText("26")).click();
+
+    $("#subjectsInput").setValue("English").pressEnter();
+
+    $(byText("Music")).click();
+
+
+
+
+
 
 
   }
