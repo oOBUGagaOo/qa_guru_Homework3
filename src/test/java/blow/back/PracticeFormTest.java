@@ -39,6 +39,9 @@ public class PracticeFormTest {
     $("#city").click();
     $("#stateCity-wrapper").$(byText("Delhi")).click();
     $("#submit").click();
+    File fileUpload = new File("src/test/java/resurses/Fotka.jpg");
+    $("#uploadPicture").uploadFile(fileUpload);
+
 
     $(".modal-header").shouldHave(text("Thanks for submitting the form"));
 
