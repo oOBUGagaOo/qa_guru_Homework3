@@ -33,22 +33,26 @@ public class PracticeFormTest {
     $(".react-datepicker__month-container").$(byText("26")).click();
     $("#subjectsInput").setValue("English").pressEnter();
     $(byText("Music")).click();
+    File fileUpload = new File("src/test/java/resurses/Fotka.jpg");
+    $("#uploadPicture").uploadFile(fileUpload);
     $("#currentAddress").setValue("SDFSDFS");
     $("#state").click();
     $("#stateCity-wrapper").$(byText("NCR")).click();
     $("#city").click();
     $("#stateCity-wrapper").$(byText("Delhi")).click();
     $("#submit").click();
-    File fileUpload = new File("src/test/java/resurses/Fotka.jpg");
-    $("#uploadPicture").uploadFile(fileUpload);
 
+    $(".modal-body").shouldHave(text("Dmitry Plotnikov"));
+    $(".modal-body").shouldHave(text("kokoko@koko.ru"));
+    $(".modal-body").shouldHave(text("Female"));
+    $(".modal-body").shouldHave(text("9008007000"));
+    $(".modal-body").shouldHave(text("26 August,1997"));
+    $(".modal-body").shouldHave(text("English"));
+    $(".modal-body").shouldHave(text("Music"));
+    $(".modal-body").shouldHave(text("Fotka.jpg"));
+    $(".modal-body").shouldHave(text("SDFSDFS"));
 
-    $(".modal-header").shouldHave(text("Thanks for submitting the form"));
-
-
-
-
-
+    $("#closeLargeModal").click();
 
 
   }
