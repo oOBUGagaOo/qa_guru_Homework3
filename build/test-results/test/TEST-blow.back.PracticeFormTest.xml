@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="blow.back.PracticeFormTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-25T16:51:58" hostname="LAPTOP-B7LG47N3" time="2.486">
+<testsuite name="blow.back.PracticeFormTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-25T17:01:44" hostname="LAPTOP-B7LG47N3" time="4.663">
   <properties/>
-  <testcase name="fillFormTest()" classname="blow.back.PracticeFormTest" time="2.486"/>
+  <testcase name="fillFormTest()" classname="blow.back.PracticeFormTest" time="4.663"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 7570
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 4899
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1677343913.845][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-февр. 25, 2023 7:51:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[1677344502.585][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+февр. 25, 2023 8:01:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
 ]]></system-err>
 </testsuite>

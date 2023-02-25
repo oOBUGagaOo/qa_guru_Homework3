@@ -52,6 +52,7 @@ public class PracticeFormTest {
     $(".modal-body").shouldHave(text("Music"));
     $(".modal-body").shouldHave(text("Fotka.jpg"));
     $(".modal-body").shouldHave(text("SDFSDFS"));
+    $(".modal-body").shouldHave(text("NCR Delhi"));
 
     $("#closeLargeModal").click();
 
