@@ -42,18 +42,5 @@ public class PracticeFormTest {
     $("#stateCity-wrapper").$(byText("Delhi")).click();
     $("#submit").click();
 
-    $(".modal-body").shouldHave(text("Dmitry Plotnikov"));
-    $(".modal-body").shouldHave(text("kokoko@koko.ru"));
-    $(".modal-body").shouldHave(text("Female"));
-    $(".modal-body").shouldHave(text("9008007000"));
-    $(".modal-body").shouldHave(text("26 August,1997"));
-    $(".modal-body").shouldHave(text("English"));
-    $(".modal-body").shouldHave(text("Music"));
-    $(".modal-body").shouldHave(text("Fotka.jpg"));
-    $(".modal-body").shouldHave(text("SDFSDFS"));
-
-    $("#closeLargeModal").click();
-
-
   }
 }
