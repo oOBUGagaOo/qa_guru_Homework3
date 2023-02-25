@@ -34,7 +34,7 @@ public class PracticeFormTest {
     $(".react-datepicker__month-container").$(byText("26")).click();
     $("#subjectsInput").setValue("English").pressEnter();
     $(byText("Music")).click();
-    File fileUpload = new File("src/test/java/resurses/Fotka.jpg");
+    File fileUpload = new File("src/test/resources/Fotka.jpg");
     $("#uploadPicture").uploadFile(fileUpload);
     $("#currentAddress").setValue("SDFSDFS");
     $("#state").click();
