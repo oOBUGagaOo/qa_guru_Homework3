@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class PracticeFormTest {
+public class PracticeFormTestHW3 {
 
   @BeforeAll
   static void beforeAll() {
