@@ -2,6 +2,7 @@ HELP.md
 ../build/
 !**/src/main/**
 !**/src/test/**
+target/
 
 ### IntelliJ IDEA ###
 .idea
