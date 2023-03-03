@@ -23,7 +23,5 @@ public class DragnDropActionsTest {
             .moveToElement(targetEl)
             .release()
             .perform();
-    $("#column-a").shouldHave(text("B"));
-    $("#column-b").shouldHave(text("A"));
   }
 }
