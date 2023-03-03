@@ -22,6 +22,7 @@ public class DragnDropActionsTest {
             .clickAndHold(sourceEl)
             .moveToElement(targetEl)
             .release()
+            .build()
             .perform();
   }
 }
