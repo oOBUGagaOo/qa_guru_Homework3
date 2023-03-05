@@ -9,20 +9,22 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class DragnDropActionsTest {
 
-  @BeforeAll
-  static void beforeAll() {
-    open("https://the-internet.herokuapp.com/drag_and_drop");
-  }
+    @BeforeAll
+    static void beforeAll() {
+        open("https://the-internet.herokuapp.com/drag_and_drop");
+    }
 
-  @Test
-  void checkingActionsDrugAndDrop() {
-    SelenideElement sourceEl = $("#column-a");
-    SelenideElement targetEl = $("#column-b");
-    actions()
-            .clickAndHold(sourceEl)
-            .moveToElement(targetEl)
-            .release()
-            .build()
-            .perform();
-  }
+    @Test
+    void checkingActionsDrugAndDrop() {
+        SelenideElement sourceEl = $("#column-a");
+        SelenideElement targetEl = $("#column-b");
+        actions()
+                .clickAndHold(sourceEl)
+                .moveToElement(targetEl)
+                .release()
+                .build()
+                .perform();
+        $("#column-a").shouldHave(text("B"));
+        $("#column-b").shouldHave(text("A"));
+    }
 }
