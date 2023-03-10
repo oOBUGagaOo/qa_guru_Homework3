@@ -55,6 +55,10 @@ public class RegistrationPage {
   public RegistrationPage verifyResultsAppearModal() {
     finishRegistrationModal.verifyAppearModal();
     return this;
+
+  } public RegistrationPage verifyResult(String key, String value) {
+    finishRegistrationModal.verifyResult(key, value);
+    return this;
   }
 
 

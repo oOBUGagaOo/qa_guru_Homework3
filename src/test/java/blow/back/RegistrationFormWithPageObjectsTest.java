@@ -6,7 +6,6 @@ import org.openqa.selenium.Keys;
 
 import java.io.File;
 
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
@@ -36,7 +35,18 @@ public class RegistrationFormWithPageObjectsTest extends TestBase {
     $("#stateCity-wrapper").$(byText("Delhi")).click();
     $("#submit").sendKeys(Keys.ENTER);
 
-    registrationPage.verifyResultsAppearModal();
+    registrationPage.verifyResultsAppearModal()
+            .verifyResult("Student Name", "Dmitry Plotnikov")
+            .verifyResult("Student Email", "kokoko@koko.ru")
+            .verifyResult("Gender", "Other")
+            .verifyResult("Mobile", "9008007000")
+            .verifyResult("Date of Birth", "27 June,2000")
+            .verifyResult("Subjects", "English")
+            .verifyResult("Hobbies", "Music")
+            .verifyResult("Picture", "Fotka.jpg")
+            .verifyResult("Address", "SDFSDFS")
+            .verifyResult("State and City", "NCR Delhi");
+
 
     $("#closeLargeModal").click();
 
