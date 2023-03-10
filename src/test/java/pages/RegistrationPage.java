@@ -1,7 +1,10 @@
 package pages;
 
+import org.openqa.selenium.Keys;
 import pages.components.DatepickerComponent;
 import pages.components.FinishRegistrationModal;
+
+import java.io.File;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
@@ -49,6 +52,40 @@ public class RegistrationPage {
   public RegistrationPage setBirthday(String day, String month, String year) {
     $("#dateOfBirthInput").click();
     calendarComponent.setDate(day, month, year);
+    return this;
+  }
+
+  public RegistrationPage setSubjects(String value) {
+    $("#subjectsInput").setValue(value).pressEnter();
+    return this;
+  }
+
+  public RegistrationPage setHobbies(String value) {
+    $(byText(value)).click();
+    return this;
+  }
+
+  public RegistrationPage uploadFoto() {
+    File fileUpload = new File("src/test/resources/Fotka.jpg");
+    $("#uploadPicture").uploadFile(fileUpload);
+    return this;
+  }
+
+  public RegistrationPage setAddress(String value) {
+    $("#currentAddress").setValue(value);
+    return this;
+  }
+
+  public RegistrationPage setStateAndCity(String state, String city) {
+    $("#state").click();
+    $("#stateCity-wrapper").$(byText(state)).click();
+    $("#city").click();
+    $("#stateCity-wrapper").$(byText(city)).click();
+    return this;
+  }
+
+  public RegistrationPage pressEnter() {
+    $("#submit").sendKeys(Keys.ENTER);
     return this;
   }
 
