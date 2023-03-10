@@ -2,11 +2,11 @@ package blow.back;
 
 
 import org.junit.jupiter.api.Test;
-
-import static com.codeborne.selenide.Selenide.$;
+import pages.RegistrationPage;
 
 public class RegistrationFormWithPageObjectsTest extends TestBase {
 
+  RegistrationPage registrationPage = new RegistrationPage();
 
   @Test
   void fillFormTest() {
@@ -36,10 +36,9 @@ public class RegistrationFormWithPageObjectsTest extends TestBase {
             .verifyResult("Hobbies", "Music")
             .verifyResult("Picture", "Fotka.jpg")
             .verifyResult("Address", "SDFSDFS")
-            .verifyResult("State and City", "NCR Delhi");
+            .verifyResult("State and City", "NCR Delhi")
+            .closeLargeModal();
 
-
-    $("#closeLargeModal").click();
 
   }
 }

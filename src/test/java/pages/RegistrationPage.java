@@ -2,7 +2,7 @@ package pages;
 
 import org.openqa.selenium.Keys;
 import pages.components.DatepickerComponent;
-import pages.components.FinishRegistrationModal;
+import pages.components.RegistrationModalComponent;
 
 import java.io.File;
 
@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class RegistrationPage {
 
   DatepickerComponent calendarComponent = new DatepickerComponent();
-  FinishRegistrationModal finishRegistrationModal = new FinishRegistrationModal();
+  RegistrationModalComponent finishRegistrationModal = new RegistrationModalComponent();
   private final String TITLE_TEXT = "Student Registration Form";
 
   public RegistrationPage openPage() {
@@ -99,5 +99,7 @@ public class RegistrationPage {
     return this;
   }
 
-
+  public void closeLargeModal() {
+    $("#closeLargeModal").click();
+  }
 }
