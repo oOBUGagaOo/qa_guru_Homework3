@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="blow.back.RegistrationFormWithPageObjectsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-10T11:30:13" hostname="WGD02RTI1051" time="6.587">
+<testsuite name="blow.back.RegistrationFormWithPageObjectsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-03-10T11:44:20" hostname="WGD02RTI1051" time="7.047">
   <properties/>
-  <testcase name="fillFormTest()" classname="blow.back.RegistrationFormWithPageObjectsTest" time="6.587"/>
+  <testcase name="fillFormTest()" classname="blow.back.RegistrationFormWithPageObjectsTest" time="7.047"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 27861
+Starting ChromeDriver 110.0.5481.77 (65ed616c6e8ee3fe0ad64fe83796c020644d42af-refs/branch-heads/5481@{#839}) on port 20948
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-[1678447815.628][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
-мар. 10, 2023 2:30:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[1678448663.113][WARNING]: virtual void DevToolsClientImpl::AddListener(DevToolsEventListener *) subscribing a listener to the already connected DevToolsClient. Connection notification will not arrive.
+мар. 10, 2023 2:44:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 110, so returning the closest version found: 109
 ]]></system-err>
 </testsuite>

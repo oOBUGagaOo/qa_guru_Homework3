@@ -84,9 +84,8 @@ public class RegistrationPage {
     return this;
   }
 
-  public RegistrationPage pressEnter() {
+  public void pressEnter() {
     $("#submit").sendKeys(Keys.ENTER);
-    return this;
   }
 
   public RegistrationPage verifyResultsAppearModal() {
