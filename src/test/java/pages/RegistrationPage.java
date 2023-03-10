@@ -93,7 +93,9 @@ public class RegistrationPage {
     finishRegistrationModal.verifyAppearModal();
     return this;
 
-  } public RegistrationPage verifyResult(String key, String value) {
+  }
+
+  public RegistrationPage verifyResult(String key, String value) {
     finishRegistrationModal.verifyResult(key, value);
     return this;
   }
