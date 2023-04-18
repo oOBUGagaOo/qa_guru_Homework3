@@ -6,20 +6,25 @@ import pages.components.RegistrationModalComponent;
 
 import java.io.File;
 
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class RegistrationPage {
 
   DatepickerComponent calendarComponent = new DatepickerComponent();
-  RegistrationModalComponent finishRegistrationModal = new RegistrationModalComponent();
-  private final String TITLE_TEXT = "Student Registration Form";
+  RegistrationModalComponent RegistrationModalWindow = new RegistrationModalComponent();
 
   public RegistrationPage openPage() {
     open("https://demoqa.com/automation-practice-form");
-    $(".practice-form-wrapper").shouldHave(text(TITLE_TEXT));
+    return this;
+  }
+
+  public RegistrationPage removeFixbar() {
     executeJavaScript("$('#fixedban').remove()");
+    return this;
+  }
+
+  public RegistrationPage removeFooter() {
     executeJavaScript("$('#footer').remove()");
     return this;
   }
@@ -44,7 +49,7 @@ public class RegistrationPage {
     return this;
   }
 
-  public RegistrationPage setNumber(String value) {
+  public RegistrationPage setPhoneNumber(String value) {
     $("#userNumber").setValue(value);
     return this;
   }
@@ -65,8 +70,8 @@ public class RegistrationPage {
     return this;
   }
 
-  public RegistrationPage uploadFoto() {
-    File fileUpload = new File("src/test/resources/Fotka.jpg");
+  public RegistrationPage uploadFoto(String value) {
+    File fileUpload = new File(value);
     $("#uploadPicture").uploadFile(fileUpload);
     return this;
   }
@@ -76,9 +81,13 @@ public class RegistrationPage {
     return this;
   }
 
-  public RegistrationPage setStateAndCity(String state, String city) {
+  public RegistrationPage setState(String state) {
     $("#state").click();
     $("#stateCity-wrapper").$(byText(state)).click();
+    return this;
+  }
+
+  public RegistrationPage setCity(String city) {
     $("#city").click();
     $("#stateCity-wrapper").$(byText(city)).click();
     return this;
@@ -89,13 +98,12 @@ public class RegistrationPage {
   }
 
   public RegistrationPage verifyResultsAppearModal() {
-    finishRegistrationModal.verifyAppearModal();
+    RegistrationModalWindow.verifyThatModalAppears();
     return this;
-
   }
 
   public RegistrationPage verifyResult(String key, String value) {
-    finishRegistrationModal.verifyResult(key, value);
+    RegistrationModalWindow.verifyResult(key, value);
     return this;
   }
 

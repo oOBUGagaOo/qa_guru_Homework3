@@ -6,7 +6,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
 public class RegistrationModalComponent {
-  public void verifyAppearModal() {
+  public void verifyThatModalAppears() {
     $(".modal-dialog").should(appear);
     $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
   }
