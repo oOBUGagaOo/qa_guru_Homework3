@@ -8,20 +8,12 @@ public class RegistrationFormWithPageObjectsTest extends TestBase {
 
   RegistrationPage registrationPage = new RegistrationPage();
 
-  String firstName = "Dmitry";
-  String lastName = "Plotnikov";
-  String email = "kokoko@koko.ru";
-  String gender = "Other";
-  String phoneNumber = "9008007000";
-  String birthday_day = "27";
-  String birthday_month = "June";
-  String birthday_year = "2000";
-  String subjects = "English";
-  String hobbies = "Music";
-  String picture = "src/test/resources/Fotka.jpg";
-  String address = "SDFSDFS";
-  String state = "NCR";
-  String city = "Delhi";
+  String firstName = "Dmitry", lastName = "Plotnikov", gender = "Other",
+  email = "kokoko@koko.ru", phoneNumber = "9008007000",
+  birthdayDay = "27", birthdayMonth = "June", birthdayYear = "2000",
+  subject = "English", hobbie = "Music",
+  picture = "src/test/resources/Fotka.jpg",
+  address = "SDFSDFS", state = "NCR", city = "Delhi";
 
 
   @Test
@@ -35,9 +27,9 @@ public class RegistrationFormWithPageObjectsTest extends TestBase {
             .setEmail(email)
             .setGender(gender)
             .setPhoneNumber(phoneNumber)
-            .setBirthday(birthday_day, birthday_month, birthday_year)
-            .setSubjects(subjects)
-            .setHobbies(hobbies)
+            .setBirthday(birthdayDay, birthdayMonth, birthdayYear)
+            .setSubjects(subject)
+            .setHobbies(hobbie)
             .uploadFoto(picture)
             .setAddress(address)
             .setState(state)
@@ -46,17 +38,17 @@ public class RegistrationFormWithPageObjectsTest extends TestBase {
 
 
     registrationPage.verifyResultsAppearModal()
-            .verifyResult("Student Name", "Dmitry Plotnikov")
-            .verifyResult("Student Email", "kokoko@koko.ru")
-            .verifyResult("Gender", "Other")
-            .verifyResult("Mobile", "9008007000")
-            .verifyResult("Date of Birth", "27 June,2000")
-            .verifyResult("Subjects", "English")
-            .verifyResult("Hobbies", "Music")
-            .verifyResult("Picture", "Fotka.jpg")
-            .verifyResult("Address", "SDFSDFS")
-            .verifyResult("State and City", "NCR Delhi")
-            .closeLargeModal();
+            .verifyResult("Student Name", lastName)
+            .verifyResult("Student Email", email)
+            .verifyResult("Gender", gender)
+            .verifyResult("Mobile", phoneNumber)
+            .verifyResult("Date of Birth", birthdayDay + " " + birthdayMonth + " " + birthdayYear)
+            .verifyResult("Subjects", subject)
+            .verifyResult("Hobbies", hobbie)
+            .verifyResult("Picture", picture)
+            .verifyResult("Address", address)
+            .verifyResult("State and City", state + " " + city)
+            .closeModal();
 
 
   }

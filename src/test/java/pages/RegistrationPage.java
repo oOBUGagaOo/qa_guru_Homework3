@@ -107,7 +107,7 @@ public class RegistrationPage {
     return this;
   }
 
-  public void closeLargeModal() {
+  public void closeModal() {
     $("#closeLargeModal").click();
   }
 }

@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">16.404s</div>
+<div class="counter">34.153s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,15 +76,16 @@
 <a name="fillFormTest()"></a>
 <h3 class="failures">fillFormTest()</h3>
 <span class="code">
-<pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=111.0.5563.149)
+<pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 29.415
+  (Session info: chrome=112.0.5615.121)
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9aa9970960f89ef627f35b9aeb6515f1, executeScript {script=$('#fixedban').remove(), args=[]}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.149, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\PLOTNI~1.DMI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63291}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63291/devtoo..., se:cdpVersion: 111.0.5563.149, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9aa9970960f89ef627f35b9aeb6515f1
+Command: [cdf7dae0b61a61f8c09eddbb0c78e8d3, get {url=https://demoqa.com/automation-practice-form}]
+selenide.url: https://demoqa.com/automation-practice-form
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.121, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\PLOTNI~1.DMI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61640}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61640/devtoo..., se:cdpVersion: 112.0.5615.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+selenide.baseUrl: http://localhost:8080
+Session ID: cdf7dae0b61a61f8c09eddbb0c78e8d3
 	at java.base@17.0.6/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base@17.0.6/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base@17.0.6/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -97,12 +98,16 @@ Session ID: 9aa9970960f89ef627f35b9aeb6515f1
 	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:480)
-	at app//com.codeborne.selenide.Driver.executeJavaScript(Driver.java:56)
-	at app//com.codeborne.selenide.SelenideDriver.executeJavaScript(SelenideDriver.java:234)
-	at app//com.codeborne.selenide.Selenide.executeJavaScript(Selenide.java:550)
-	at app//pages.RegistrationPage.removeFixbar(RegistrationPage.java:23)
-	at app//blow.back.RegistrationFormWithPageObjectsTest.fillFormTest(RegistrationFormWithPageObjectsTest.java:15)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
+	at app//org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.to(RemoteWebDriver.java:983)
+	at app//com.codeborne.selenide.drivercommands.Navigator.lambda$navigateTo$0(Navigator.java:74)
+	at app//com.codeborne.selenide.logevents.SelenideLogger.run(SelenideLogger.java:105)
+	at app//com.codeborne.selenide.drivercommands.Navigator.navigateTo(Navigator.java:70)
+	at app//com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:32)
+	at app//com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:101)
+	at app//com.codeborne.selenide.Selenide.open(Selenide.java:52)
+	at app//pages.RegistrationPage.openPage(RegistrationPage.java:18)
+	at app//blow.back.RegistrationFormWithPageObjectsTest.fillFormTest(RegistrationFormWithPageObjectsTest.java:22)
 	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base@17.0.6/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -202,7 +207,7 @@ Session ID: 9aa9970960f89ef627f35b9aeb6515f1
 </thead>
 <tr>
 <td class="failures">fillFormTest()</td>
-<td class="failures">16.404s</td>
+<td class="failures">34.153s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -213,12 +218,14 @@ Session ID: 9aa9970960f89ef627f35b9aeb6515f1
 <pre>SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 30017
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 5495
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-апр. 18, 2023 11:10:32 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 111, so returning the closest version found: 110
+апр. 20, 2023 12:25:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 110
+[1681982777.428][SEVERE]: Timed out receiving message from renderer: 29.415
+[1681982777.441][SEVERE]: Timed out receiving message from renderer: 29.415
 </pre>
 </span>
 </div>
@@ -230,7 +237,7 @@ WARNING: Unable to find an exact match for CDP version 111, so returning the clo
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at 18 апр. 2023 г., 11:10:47</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at 20 апр. 2023 г., 12:26:18</p>
 </div>
 </div>
 </body>
