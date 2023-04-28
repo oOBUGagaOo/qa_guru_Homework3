@@ -1,20 +1,25 @@
 package blow.back;
 
-
+import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
+
+import java.util.Locale;
 
 public class RegistrationFormWithPageObjectsTest extends TestBase {
 
   RegistrationPage registrationPage = new RegistrationPage();
+  Faker faker = new Faker(new Locale("ru"));
 
-  String firstName = "Dmitry", lastName = "Plotnikov", gender = "Other",
-  email = "kokoko@koko.ru", phoneNumber = "9008007000",
-  birthdayDay = "27", birthdayMonth = "June", birthdayYear = "2000",
-  subject = "English", hobbie = "Music",
-  picture = "src/test/resources/Fotka.jpg",
-  address = "SDFSDFS", state = "NCR", city = "Delhi";
-
+  String firstName = faker.name().firstName(),
+          lastName = faker.name().lastName(),
+          gender = "Other",
+          email = faker.internet().emailAddress(),
+          phoneNumber = faker.phoneNumber().phoneNumber(),
+          birthdayDay = "27", birthdayMonth = "June", birthdayYear = "2000",
+          subject = "English", hobbie = "Music",
+          picture = "src/test/resources/Fotka.jpg",
+          address = "SDFSDFS", state = "NCR", city = "Delhi";
 
   @Test
   void fillFormTest() {
@@ -35,7 +40,6 @@ public class RegistrationFormWithPageObjectsTest extends TestBase {
             .setState(state)
             .setCity(city)
             .pressEnter();
-
 
     registrationPage.verifyResultsAppearModal()
             .verifyResult("Student Name", lastName)
