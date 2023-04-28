@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="blow.back.RegistrationFormWithPageObjectsTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-04-20T09:25:43" hostname="WGD02RTI1051" time="34.153">
+<testsuite name="blow.back.RegistrationFormWithPageObjectsTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2023-04-28T13:06:06" hostname="WGD02RTI1051" time="34.086">
   <properties/>
-  <testcase name="fillFormTest()" classname="blow.back.RegistrationFormWithPageObjectsTest" time="34.153">
-    <failure message="org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 29.415&#10;  (Session info: chrome=112.0.5615.121)&#10;Build info: version: '4.8.1', revision: '8ebccac989'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [cdf7dae0b61a61f8c09eddbb0c78e8d3, get {url=https://demoqa.com/automation-practice-form}]&#10;selenide.url: https://demoqa.com/automation-practice-form&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.121, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\PLOTNI~1.DMI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61640}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61640/devtoo..., se:cdpVersion: 112.0.5615.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;selenide.baseUrl: http://localhost:8080&#10;Session ID: cdf7dae0b61a61f8c09eddbb0c78e8d3" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 29.415
-  (Session info: chrome=112.0.5615.121)
+  <testcase name="fillFormTest()" classname="blow.back.RegistrationFormWithPageObjectsTest" time="34.086">
+    <failure message="org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 29.549&#10;  (Session info: chrome=112.0.5615.138)&#10;Build info: version: '4.8.1', revision: '8ebccac989'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [63e139aad3b8fd70cf8f1b6bf9d25e7b, get {url=https://demoqa.com/automation-practice-form}]&#10;selenide.url: https://demoqa.com/automation-practice-form&#10;Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\PLOTNI~1.DMI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53413}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53413/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;selenide.baseUrl: http://localhost:8080&#10;Session ID: 63e139aad3b8fd70cf8f1b6bf9d25e7b" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 29.549
+  (Session info: chrome=112.0.5615.138)
 Build info: version: '4.8.1', revision: '8ebccac989'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cdf7dae0b61a61f8c09eddbb0c78e8d3, get {url=https://demoqa.com/automation-practice-form}]
+Command: [63e139aad3b8fd70cf8f1b6bf9d25e7b, get {url=https://demoqa.com/automation-practice-form}]
 selenide.url: https://demoqa.com/automation-practice-form
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.121, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\PLOTNI~1.DMI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61640}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61640/devtoo..., se:cdpVersion: 112.0.5615.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\PLOTNI~1.DMI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:53413}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53413/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 selenide.baseUrl: http://localhost:8080
-Session ID: cdf7dae0b61a61f8c09eddbb0c78e8d3
+Session ID: 63e139aad3b8fd70cf8f1b6bf9d25e7b
 	at java.base@17.0.6/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base@17.0.6/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base@17.0.6/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -33,7 +33,7 @@ Session ID: cdf7dae0b61a61f8c09eddbb0c78e8d3
 	at app//com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:101)
 	at app//com.codeborne.selenide.Selenide.open(Selenide.java:52)
 	at app//pages.RegistrationPage.openPage(RegistrationPage.java:18)
-	at app//blow.back.RegistrationFormWithPageObjectsTest.fillFormTest(RegistrationFormWithPageObjectsTest.java:22)
+	at app//blow.back.RegistrationFormWithPageObjectsTest.fillFormTest(RegistrationFormWithPageObjectsTest.java:20)
 	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@17.0.6/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base@17.0.6/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -123,13 +123,13 @@ Session ID: cdf7dae0b61a61f8c09eddbb0c78e8d3
   <system-err><![CDATA[SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 5495
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 13165
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-апр. 20, 2023 12:25:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+апр. 28, 2023 4:06:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 112, so returning the closest version found: 110
-[1681982777.428][SEVERE]: Timed out receiving message from renderer: 29.415
-[1681982777.441][SEVERE]: Timed out receiving message from renderer: 29.415
+[1682687200.076][SEVERE]: Timed out receiving message from renderer: 29.549
+[1682687200.080][SEVERE]: Timed out receiving message from renderer: 29.549
 ]]></system-err>
 </testsuite>

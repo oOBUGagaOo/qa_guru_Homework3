@@ -15,7 +15,7 @@ public class RegistrationFormWithPageObjectsTest extends TestBase {
           lastName = faker.name().lastName(),
           gender = "Other",
           email = faker.internet().emailAddress(),
-          phoneNumber = faker.phoneNumber().phoneNumber(),
+          phoneNumber = faker.phoneNumber().subscriberNumber(10),
           birthdayDay = "27", birthdayMonth = "June", birthdayYear = "2000",
           subject = "English", hobbie = "Music",
           picture = "src/test/resources/Fotka.jpg",
