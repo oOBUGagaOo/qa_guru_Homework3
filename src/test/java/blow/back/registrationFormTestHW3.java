@@ -13,12 +13,12 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class RegistrationFormTest_HW3 {
+public class registrationFormTestHW3 {
 
   @BeforeAll
   static void beforeAll() {
     Configuration.browserSize = "1920x1080";
-    open("https://demoqa.com/automation-practice-form");
+    open("http://demoqa.com/automation-practice-form");
   }
 
   @Test

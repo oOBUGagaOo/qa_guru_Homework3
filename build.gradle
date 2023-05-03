@@ -11,18 +11,15 @@ repositories {
 
 dependencies {
     testImplementation (
-            "com.codeborne:selenide:6.12.3",
+            "com.codeborne:selenide:6.12.4",
             "com.github.javafaker:javafaker:1.0.2",
+            "org.slf4j:slf4j-simple:2.0.6",
             "org.junit.jupiter:junit-jupiter:5.9.2"
     )
 }
 
 test {
     useJUnitPlatform()
-
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
-
 }
 
 

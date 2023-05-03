@@ -1,25 +1,22 @@
 package blow.back;
 
-import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 
-import java.util.Locale;
+import static utils.RandomUtils.*;
 
-public class RegistrationFormWithPageObjectsTest extends TestBase {
-
+public class RegistrationFormWithFakerTest extends TestBase {
   RegistrationPage registrationPage = new RegistrationPage();
-  Faker faker = new Faker(new Locale("ru"));
-
-  String firstName = faker.name().firstName(),
-          lastName = faker.name().lastName(),
-          gender = "Other",
-          email = faker.internet().emailAddress(),
-          phoneNumber = faker.phoneNumber().subscriberNumber(10),
-          birthdayDay = "27", birthdayMonth = "June", birthdayYear = "2000",
-          subject = "English", hobbie = "Music",
+  String firstName = getFirstName(), lastName = getLastName(),
+          gender = getRandomGender(),
+          email = getRandomEmailAddress(), phoneNumber = getPhoneNumber(),
+          birthdayDay = String.valueOf(getBirthdayDay()),
+          birthdayMonth = getBirthdayMonth(),
+          birthdayYear = String.valueOf(getBirthdayYear()),
+          subject = getRandomSubject(),
+          hobbie = getRandomHobbies(),
           picture = "src/test/resources/Fotka.jpg",
-          address = "SDFSDFS", state = "NCR", city = "Delhi";
+          address = getRandomAddress(), state = "NCR", city = getRandomCity();
 
   @Test
   void fillFormTest() {
