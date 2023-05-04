@@ -7,6 +7,7 @@ import static utils.RandomUtils.*;
 
 public class RegistrationFormWithFakerTest extends TestBase {
   RegistrationPage registrationPage = new RegistrationPage();
+
   String firstName = getFirstName(), lastName = getLastName(),
           gender = getRandomGender(),
           email = getRandomEmailAddress(), phoneNumber = getPhoneNumber(),
@@ -14,8 +15,9 @@ public class RegistrationFormWithFakerTest extends TestBase {
           birthdayMonth = getBirthdayMonth(),
           birthdayYear = String.valueOf(getBirthdayYear()),
           subject = getRandomSubject(),
-          hobbie = getRandomHobbies(),
-          picture = "src/test/resources/Fotka.jpg",
+          hobbies = getRandomHobbies(),
+          picturePath = "src/test/resources/Fotka.jpg",
+          pictureName = "Fotka.jpg",
           address = getRandomAddress(), state = "NCR", city = getRandomCity();
 
   @Test
@@ -31,8 +33,8 @@ public class RegistrationFormWithFakerTest extends TestBase {
             .setPhoneNumber(phoneNumber)
             .setBirthday(birthdayDay, birthdayMonth, birthdayYear)
             .setSubjects(subject)
-            .setHobbies(hobbie)
-            .uploadFoto(picture)
+            .setHobbies(hobbies)
+            .uploadFoto(picturePath)
             .setAddress(address)
             .setState(state)
             .setCity(city)
@@ -43,10 +45,10 @@ public class RegistrationFormWithFakerTest extends TestBase {
             .verifyResult("Student Email", email)
             .verifyResult("Gender", gender)
             .verifyResult("Mobile", phoneNumber)
-            .verifyResult("Date of Birth", birthdayDay + " " + birthdayMonth + " " + birthdayYear)
+            .verifyResult("Date of Birth",birthdayDay +" "+ birthdayMonth +","+ birthdayYear)
             .verifyResult("Subjects", subject)
-            .verifyResult("Hobbies", hobbie)
-            .verifyResult("Picture", picture)
+            .verifyResult("Hobbies", hobbies)
+            .verifyResult("Picture", pictureName)
             .verifyResult("Address", address)
             .verifyResult("State and City", state + " " + city)
             .closeModal();

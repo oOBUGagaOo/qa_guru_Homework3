@@ -3,6 +3,7 @@ package utils;
 import com.github.javafaker.Faker;
 
 import java.security.SecureRandom;
+import java.util.Locale;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class RandomUtils {
@@ -11,7 +12,7 @@ public class RandomUtils {
   public static void main(String[] args) {
     System.out.println(getRandomString(10));
     System.out.println(getrandomInt(10, 100));
-    System.out.println(getRandomEmail());
+    //System.out.println(getRandomEmail());
 
     String[] names = {"a", "b", "c", "d", "e"};
     System.out.println(getRandomItemFromArray(names));
@@ -31,7 +32,7 @@ public class RandomUtils {
     return sb.toString();
   }
 
-  public static String getFirstName() {
+    public static String getFirstName() {
     return new Faker().name().firstName();
   }
 
@@ -39,12 +40,12 @@ public class RandomUtils {
     return new Faker().name().lastName();
   }
 
-  public static String getRandomGender() {
-    return new Faker().options().option("Male", "Female", "Other");
-  }
-
   public static String getRandomEmail() {
     return getRandomString(10) + "@mail.ru";
+  }
+
+  public static String getRandomGender() {
+    return new Faker().options().option("Male", "Female", "Other");
   }
 
   public static String getRandomEmailAddress() {
