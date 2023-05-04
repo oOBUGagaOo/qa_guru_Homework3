@@ -15,7 +15,7 @@ public class RegistrationPage {
   RegistrationModalComponent RegistrationModalWindow = new RegistrationModalComponent();
 
   public RegistrationPage openPage() {
-    open("/automation-practice-form");
+    open("http://demoqa.com/automation-practice-form");
     return this;
   }
 
